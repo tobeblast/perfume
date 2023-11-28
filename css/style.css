@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body .container{
+    background-color:hsl(33, 59%, 90%) ;
+    width: 70%;
+    height: 70dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#body .container .image{
+    width: 30%;
+}
+
+#body .container .image img {
+    width: 95%;
+    height: 60dvh;    
+    margin-left: 4.5%;
+    border-radius: 15px 0 0 15px;
+}
+
+#body .container .white{
+    width: 35%;
+    height: 60dvh;
+    padding: 5% 5% 5%;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+}
+
+#body .container .white .text p{
+    color: gray;
+    margin-bottom: 5%;
+}
+
+#body .container .white .text h1 {
+    width: 65%;
+    padding-bottom: 7%;
+}
+
+#body .container .white .price{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5%
+}
+
+#body .container .white .price h1{
+    color: green;
+    font-size: 35px;
+}
+
+#body .container .white .price p{
+    margin-top: 20%;
+    text-decoration: line-through;
+}
+
+#body .container .white button{
+    background-color: green;
+    color: white;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 0;
+    border: 0;
+    width: 80%;
+}
+
+#body .container .white button:hover{
+    color: rgb(241, 143, 159);
+    background-color: blue;
+}
+
+#body .container .white button .cart p {
+    color: white;
+}
+
+/* mobile view  */
+
+@media (max-width:500px){
+
+    #body .container {
+        background-color:hsl(33, 59%, 90%);
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10%;
+        
+    }
+
+    #body .container .image{
+        width: 100%;
+        padding-top: 90%;
+    }
+
+    #body .container .image img { 
+        width: 100%;
+        margin-top: 15%;
+        border-radius: 15px 15px 0 0;
+        margin-left: 0;
+        height: 100%;
+
+    }
+
+    #body .container .white {
+        width: 100%;
+        height: 60dvh;
+        padding: 5% 10% 5%;
+        margin-top: -3%;
+        background-color: white;
+        border-radius: 0 0 15px 15px;
+    }
+
+
+}
